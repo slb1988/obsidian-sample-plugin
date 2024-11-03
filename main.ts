@@ -4,10 +4,12 @@ import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Set
 
 interface MyPluginSettings {
 	mySetting: string;
+	defaultSavePath: string;
 }
 
 const DEFAULT_SETTINGS: MyPluginSettings = {
-	mySetting: 'default'
+	mySetting: 'default',
+	defaultSavePath: './'
 }
 
 export default class MyPlugin extends Plugin {
